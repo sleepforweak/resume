@@ -6,59 +6,99 @@
     <meta name="keywards" content="stanislav, cv, resume">
     <meta name=" discription" content="Это сайт - резюме Станислава Макушенко">
     <title>Stanislav resume</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <img src="face_img.jpg" width="170" alt="no img">
+<div class="container">
+    <div class="info">
+    <img src="face_img.jpg" alt="no img" class="avatar">
+
+       <div class="info-text">
     <h1><strong>Макушенко Станислав</strong></h1>
+
     <p>Я тот кто встал на путь программиста,
-       прохожу курс <strong>"HTML & CSS - это первый шаг, 
-       чтобы стать IT-разработчиком"</strong></p>
+       прохожу курс <span class="span">"HTML & CSS - это первый шаг, 
+       чтобы стать IT-разработчиком"</span></p>
        <p>Люблю <em>рисовать, заниматься спортом и программировать</em></p>
+
     <h4><strong>Список Социальных сетей:</strong></h4>
+
     <a href="https://web.telegram.org/k/#@stusibo" target="_blank">Telegram </a>
-    /
+    l
     <a href="https://vk.com/banankka" target="_blank" >ВК </a>
-    /
+    l
+    <a href="#asdasd">YouTube</a>
+
+       </div>
+
+    </div>
+
+    <div class="card bg-green">
     <h2><strong>Мои хобби</strong></h2>
-    <ol>
+
+    <ol class="list">
         <li>Рисование</li>
         <li>Чтение</li>
         <li>Кататься на коньках</li>
         <li>Баскетбол</li>
     </ol>
+    </div>
+
+    <div class="card bg-yellow">
     <h2>Опыт работы</h2>
-    <table>
-        <thead>
-            <tr>
-          <th>Название</th>
-          <th>Должность</th>
-          <th>Год</th>
-            </tr>
-        </thead>
+    <table class="table">
         <tbody>
              <tr>
-                <td>Пятёрочка</td>
-                <td>Работник зала</td>
-                <td>2023-сейчас</td>
+                <td>Lorem, ipsum.</td>
+                <td>Lorem, ipsum dolor.</td>
+                <td>Lorem, ipsum alos.</td>
             </tr>
+
+            <tr>
+                <td>Lorem, ipsum.</td>
+                <td>Lorem, ipsum dolor.</td>
+                <td>Lorem, ipsum alos.</td>
+            </tr>
+
+            <tr>
+                <td>Lorem, ipsum.</td>
+                <td>Lorem, ipsum dolor.</td>
+                <td>Lorem, ipsum alos</td>
+            </tr>
+
         </tbody>
     </table>
-    <h2>Связаться со мной</h2>
-    <form>
-        <div>
-            <label for="name">Ваше имя:</label>
-            <input type="text" id="name" placeholder="Введите имя">
-        </div>
-        <div>
-            <label for="email">Ваш email:</label>
-            <input type="email" id="email" placeholder="Введите email">
-        </div>
-        <div>
-            <label for="message">Ваше сообщение:</label>
-            <br>
-            <textarea type="message" id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
-        </div>
-        <input type="submit" value="Отправить!">
-    </form>
+    </div>
+
+    <div class="card bg-red">
+        <h2>Мои Курсы</h2>
+        <ul class="link-lists">
+            <li><a href="#">Получение профессии Frontend Разработчика</a></li>
+            <li><a href="#">Все курсы</a> </li>
+        </ul>
+    </div>
+
+     <form class="contact">
+     <h2>Связаться со мной</h2>
+
+     <div class="form-row">
+    <div class="form-group">
+        <label for="name">Ваше имя:</label>
+        <input type="text" id="name" placeholder="Введите имя">
+    </div>
+     <div class="form-group">
+         <label for="email">Ваш email:</label>
+         <input type="email" id="email" placeholder="Введите email">
+    </div>
+    </div>
+
+        <div class="form-group">
+        <label for="message">Ваше сообщение:</label>
+        <textarea type="message" id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
+     </div>
+    <input type="submit" class="btn" value="Отправить!">
+     </form>
+
+</div>   
     </body>
 </html>
